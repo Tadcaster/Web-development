@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>media objects</title>
+</head>
+
+<html>
+<style>
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Resets all styles to a baseline for all browsers
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: 18px sans-serif;
+	vertical-align: baseline;
+}
+
+.flex{
+display: flex;
+flex-flow: row;
+align-items: center; 
+justify-content: center; 
+}
+
+.flex > *{ 
+	min-width: 100px;
+	min-height: 100px; 
+}
+header{
+	background: rgba(200, 200, 200, 1); 
+	}
+	
+article{
+	background: rgba(200, 200, 200, .8); 
+	}
+	
+aside{
+	background: rgba(200, 200, 200, .6); 
+	}
+	
+footer{
+	background: rgba(200, 200, 200, .4); 
+	}
+
+
+
+
+</style>
+
+<body>
+	
+	<div class="flex"> 
+		
+		<header>
+			HEADER
+		</header>
+		
+		<article> 
+			ARTICLE
+		</article>
+		
+		<aside> 
+			ASIDE
+		</aside>
+		
+		<footer> 
+			FOOTER
+		</footer>
+		
+	</div><!-- end flex -->
+	
+	
+</body>
+
+</html>
