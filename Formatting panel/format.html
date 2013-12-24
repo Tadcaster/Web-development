@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Formatting Panel</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	</head>
+	
+	<style>
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Resets all styles to a baseline for all browsers
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: 16px sans-serif;
+	vertical-align: baseline;
+}
+
+html, body {
+	height: 100%;
+}
+
+.panel {
+	display: inline-block;
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+	margin-top:20px;
+	background-color: #f0f0f0;
+	border: 1px solid #c0c0c0;
+}
+
+.setting {
+	display: block;
+	height: 25px;
+	padding: 5px;
+	padding-top: 8px;
+}
+
+p {
+	display: inline-block;
+	width: 110px;
+	font-size: 12px;
+	color: #404040;
+}
+
+h2 {
+	color: #404040;
+}
+
+select {
+	display: inline-block;
+	position:relative;
+	width: 135px;
+}
+
+input {
+	display: inline-block;
+	position: inherit;
+	width: 50px;
+	left: 50px;
+}
+
+
+a {
+	float: right;
+	font-size: 10px;
+	color: #404040;
+	margin-top: 6px;
+	text-decoration:none;
+}
+
+a:hover {
+	display: inline-block;
+	float: right;
+	font-size: 10px;
+	color: #006fbe;
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#reset-image {
+	width: 135px;
+}
+
+
+	</style>
+	
+<body>
+		<div class="panel"><!-- TEXT PANEL -->
+			
+			<div class="setting"><!-- TITLE-->
+				<h2>Text style</h2>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- FONT -->
+				<p>Font</p>
+				<select id="font">
+					  <option value="ariel">Ariel</option>
+					  <option value="helvetica">Helvetica</option>
+					  <option value="times new roman">Times New Roman</option>
+					  <option value="verdana">Verdana</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- FONT -->
+			
+			<div class="setting"><!-- FONT SIZE-->
+				<p>Font size (px)</p>
+				<input id="font-size" type="text" name="font-size" value="">
+				<a href="#">Clear</a>
+			</div><!-- FONT SIZE-->
+
+			<div class="setting"><!-- FONT COLOR-->
+				<p>Font color (#hex)</p>
+				<input id="font-color" type="text" name="font-color" value="">
+				<a href="">Clear</a>
+			</div><!-- FONT COLORE-->
+						
+			<div class="setting"><!-- BOLD-->
+				<p>Bold</p>
+				<select id="bold">
+					  <option value="no">No</option>
+					  <option value="yes">Yes</option>
+					  <option value="unbold">Un-bold</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BOLD-->
+			
+			<div class="setting"><!-- ITALIC-->
+				<p>Italic</p>
+				<select id="italic">
+					  <option value="no">No</option>
+					  <option value="yes">Yes</option>
+					  <option value="unitalic">Un-Italic</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- ITALIC-->
+
+			<div class="setting"><!-- UNDERINE-->
+				<p>Underline</p>
+				<select id="underline">
+					  <option value="no">No</option>
+					  <option value="yes">Yes</option>
+					  <option value="ununderline">Un-Underline</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- UNDERINE-->
+			
+			<div class="setting"><!-- HORIZONTAL ALIGN-->
+				<p>Horizontal align</p>
+				<select id="h-align-text">
+					  <option value="left">Left</option>
+					  <option value="center">Center</option>
+					  <option value="right">Right</option>
+					  <option value="justified">Justified</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- HORIZONTAL ALIGN-->
+			
+			<div class="setting"><!-- VERTICAL ALIGN-->
+				<p>Vertical align</p>
+				<select id="v-align-text">
+					  <option value="top">Top</option>
+					  <option value="middle">Middle</option>
+					  <option value="bottom">Bottom</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- VERTICAL ALIGN-->
+			
+			<div class="setting"><!-- PADDING-->
+				<p>Padding (px)</p>
+				<input id="padding" type="text" name="padding" value="">
+				<a href="#">Clear</a>
+			</div><!-- PADDING-->
+			
+			<div class="setting"><!-- LINE SPACING-->
+				<p>Line spacing (px)</p>
+				<input id="line-spacing" type="text" name="line-spacing" value="">
+				<a href="#">Clear</a>
+			</div><!-- LINE SPACING-->
+			
+			<div class="setting"><!-- FONT CASE-->
+				<p>Font case</p>
+				<select id="font-case">
+					  <option value="normal">Sentence</option>
+					  <option value="all-caps">All caps</option>
+					  <option value="lowercase">Lowercase</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- FONT CASE-->			
+						
+		</div> <!-- TEXT PANEL -->
+		
+		<div class="panel"><!-- BACKGROUND PANEL -->
+			
+			<div class="setting"><!-- TITLE-->
+				<h2>Background style</h2>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BACKGROUND COLOR-->
+				<p>Background fill (hex)</p>
+				<input id="bgd-color" type="text" name="bgd-color" value="">
+				<a href="#">Clear</a>
+			</div><!-- BACKGROUND COLOR-->
+
+			<div class="setting"><!-- BACKGROUND IMAGE-->
+				<p>Image name</p>
+				<input id="image-name" type="text" name="image-name" value="">
+				<button id="upload-image">Upload</button>
+				<a href="">Clear</a>
+			</div><!-- BACKGROUND IMAGE-->
+			
+			<div class="setting"><!-- IMAGE REPEAT-->
+				<p>Image repeat</p>
+				<select id="image-repeat">
+					  <option value="repeat">Repeat</option>
+					  <option value="no-repeat">No repeat</option>
+					  <option value="repeat-across">Repeat across</option>
+					  <option value="repeat-down">Repeat down</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- IMAGE REPEAT-->
+			
+			<div class="setting"><!-- IMAGE SIZE-->
+				<p>Image size</p>
+				<button id="reset-image">Reset image size</button>
+			</div><!-- IMAGE SIZE-->
+			
+			<div class="setting"><!-- HOVER IMAGE-->
+				<p>Hover image</p>
+				<input id="hover-image" type="text" name="hover-image" value="">
+				<button id="upload-hover-image">Upload</button>
+				<a href="">Clear</a>
+			</div><!-- HOVER IMAGE-->		
+			
+			<div class="setting"><!-- HORIZONTAL ALIGN-->
+				<p>Horizontal align</p>
+				<select id="h-align-image">
+					  <option value="left">Left</option>
+					  <option value="center">Center</option>
+					  <option value="right">Right</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- HORIZONTAL ALIGN-->
+			
+			<div class="setting"><!-- VERTICAL ALIGN-->
+				<p>Vertical align</p>
+				<select id="v-align-image">
+					  <option value="top">Top</option>
+					  <option value="middle">Middle</option>
+					  <option value="bottom">Bottom</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- VERTICAL ALIGN-->
+			
+		</div> <!-- BACKGROUND PANEL -->
+		
+		<div class="panel"><!-- BORDERS PANEL -->
+			
+			<div class="setting"><!-- TITLE-->
+				<h2>Borders style</h2>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Border - All sides:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLORE-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Border - Left:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLORE-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Border - Right:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLORE-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Border - Top:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLORE-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Border - Bottom:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLORE-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+
+			
+		</div> <!-- BORDERS PANEL -->
+		
+	</body>
+</html>
