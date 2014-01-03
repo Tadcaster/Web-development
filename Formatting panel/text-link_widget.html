@@ -48,7 +48,9 @@ html, body {
 .panel {
 	display: inline-block;
 	float: left;
-	width: 300px;
+	width: 320px;
+	height: 900px;
+	overflow: auto;
 	margin-left: 20px;
 	margin-top:20px;
 	background-color: #f0f0f0;
@@ -71,6 +73,10 @@ p {
 
 h2 {
 	color: #404040;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 select {
@@ -108,8 +114,9 @@ a:hover {
 	width: 100%;
 }
 
-.grey {
-	background: #c0c0c0;
+ .grey {
+	height:18px;
+	;
 }
 
 .line {
@@ -130,401 +137,7 @@ a:hover {
 <body>
 		<div class="panel"><!-- TEXT PANEL -->
 			
-			<div class="setting grey"><!-- TITLE-->
-				<h2>Text style</h2>
-			</div><!-- TITLE-->
-			
-			<div class="setting grey"><!-- SIZE -->
-				<p>Size (px)</p>
-				<input id="x-size" type="text" name="x-size" value=""> <input id="y-size" type="text" name="y-size" value="">
-				<a href="#">Clear</a>
-			</div><!-- SIZE-->
-			
-			<div class="setting grey"><!-- POSITION -->
-				<p>Position (px)</p>
-				<input id="x-size" type="text" name="x-size" value=""> <input id="y-size" type="text" name="y-size" value="">
-				<a href="#">Clear</a>
-			</div><!-- POSITION-->
-			
-			<div class="setting"><!-- FONT -->
-				<p>Font</p>
-				<select id="font">
-					  <option value="ariel">Ariel</option>
-					  <option value="helvetica">Helvetica</option>
-					  <option value="times new roman">Times New Roman</option>
-					  <option value="verdana">Verdana</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- FONT -->
-			
-			<div class="setting"><!-- FONT SIZE-->
-				<p>Font size (px)</p>
-				<input id="font-size" type="text" name="font-size" value="">
-				<a href="#">Clear</a>
-			</div><!-- FONT SIZE-->
 
-			<div class="setting"><!-- FONT COLOR-->
-				<p>Font color (#hex)</p>
-				<input id="font-color" type="text" name="font-color" value="">
-				<a href="">Clear</a>
-			</div><!-- FONT COLORE-->
-						
-			<div class="setting"><!-- BOLD-->
-				<p>Bold</p>
-				<select id="bold">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unbold">Un-bold</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BOLD-->
-			
-			<div class="setting"><!-- ITALIC-->
-				<p>Italic</p>
-				<select id="italic">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unitalic">Un-Italic</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- ITALIC-->
-
-			<div class="setting"><!-- UNDERINE-->
-				<p>Underline</p>
-				<select id="underline">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="ununderline">Un-Underline</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- UNDERINE-->
-			
-			<div class="setting"><!-- HORIZONTAL ALIGN-->
-				<p>Horizontal align</p>
-				<select id="h-align-text">
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>
-					  <option value="right">Right</option>
-					  <option value="justified">Justified</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- HORIZONTAL ALIGN-->
-			
-			<div class="setting"><!-- VERTICAL ALIGN-->
-				<p>Vertical align</p>
-				<select id="v-align-text">
-					  <option value="top">Top</option>
-					  <option value="middle">Middle</option>
-					  <option value="bottom">Bottom</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- VERTICAL ALIGN-->
-			
-			<div class="setting"><!-- PADDING-->
-				<p>Padding (px)</p>
-				<input id="padding" type="text" name="padding" value="">
-				<a href="#">Clear</a>
-			</div><!-- PADDING-->
-			
-			<div class="setting"><!-- LINE SPACING-->
-				<p>Line spacing (px)</p>
-				<input id="line-spacing" type="text" name="line-spacing" value="">
-				<a href="#">Clear</a>
-			</div><!-- LINE SPACING-->
-			
-			<div class="setting"><!-- FONT CASE-->
-				<p>Font case</p>
-				<select id="font-case">
-					  <option value="normal">Sentence</option>
-					  <option value="all-caps">All caps</option>
-					  <option value="lowercase">Lowercase</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- FONT CASE-->			
-						
-		</div> <!-- TEXT PANEL -->
-		
-		<div class="panel"><!-- BACKGROUND PANEL -->
-			
-			<div class="setting grey"><!-- TITLE-->
-				<h2>Background  style</h2>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BACKGROUND COLOR-->
-				<p>Background fill (hex)</p>
-				<input id="bgd-color" type="text" name="bgd-color" value="">
-				<a href="#">Clear</a>
-			</div><!-- BACKGROUND COLOR-->
-
-			<div class="setting"><!-- BACKGROUND IMAGE-->
-				<p>Image name</p>
-				<input id="image-name" type="text" name="image-name" value="">
-				<button id="upload-image">Upload</button>
-				<a href="">Clear</a>
-			</div><!-- BACKGROUND IMAGE-->
-			
-			<div class="setting"><!-- IMAGE REPEAT-->
-				<p>Image repeat</p>
-				<select id="image-repeat">
-					  <option value="repeat">Repeat</option>
-					  <option value="no-repeat">No repeat</option>
-					  <option value="repeat-across">Repeat across</option>
-					  <option value="repeat-down">Repeat down</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- IMAGE REPEAT-->
-			
-			<div class="setting"><!-- IMAGE SIZE-->
-				<p>Image size</p>
-				<button id="reset-image">Reset image size</button>
-			</div><!-- IMAGE SIZE-->
-			
-			<div class="setting"><!-- HOVER IMAGE-->
-				<p>Hover image</p>
-				<input id="hover-image" type="text" name="hover-image" value="">
-				<button id="upload-hover-image">Upload</button>
-				<a href="">Clear</a>
-			</div><!-- HOVER IMAGE-->		
-			
-			<div class="setting"><!-- HORIZONTAL ALIGN-->
-				<p>Horizontal align</p>
-				<select id="h-align-image">
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>
-					  <option value="right">Right</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- HORIZONTAL ALIGN-->
-			
-			<div class="setting"><!-- VERTICAL ALIGN-->
-				<p>Vertical align</p>
-				<select id="v-align-image">
-					  <option value="top">Top</option>
-					  <option value="middle">Middle</option>
-					  <option value="bottom">Bottom</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- VERTICAL ALIGN-->
-			
-		</div> <!-- BACKGROUND PANEL -->
-		
-		<div class="panel"><!-- BORDERS PANEL -->
-			
-			<div class="setting grey"><!-- TITLE-->
-				<h2>Borders style</h2>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Border - All sides:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Border - Left:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Border - Right:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Border - Top:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Border - Bottom:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-		
-		</div> <!-- BORDERS PANEL -->
-
-		<div class="panel"><!-- CORNERS PANEL -->
-			
-			<div class="setting grey"><!-- TITLE-->
-				<h2>Rounded corners style</h2>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">All corners:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- All CORNERS-->
-				<p>Corner radius (px)</p>
-				<input id="radius-all" type="text" name="radius-all" value="">
-				<a href="">Clear</a>
-			</div><!-- ALL CORNERS-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Top left corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- TOP LEFT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-top-left" type="text" name="radius-top-left" value="">
-				<a href="">Clear</a>
-			</div><!-- TOP LEFT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Top right corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- TOP RIGHT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-top-right" type="text" name="radius-top-right" value="">
-				<a href="">Clear</a>
-			</div><!-- TOP RIGHT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Bottom right corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- BOTTOM RIGHT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-bottom-right" type="text" name="radius-bottom-right" value="">
-				<a href="">Clear</a>
-			</div><!-- BOTTOM RIGHT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Bottom left corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- BOTTOM LEFT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
-				<a href="">Clear</a>
-			</div><!-- BOTTOM LEFT CORNER-->
-			
-		</div><!-- CORNERS PANEL -->		
-
-		<div class="panel"><!-- LINK PANEL -->
 			
 			<div class="setting grey"><!-- TITLE-->
 				<h2>Links style</h2>
@@ -553,9 +166,9 @@ a:hover {
 			</div><!-- LINK FONT SIZE-->
 
 			<div class="setting"><!-- LINK FONT COLOR-->
-				<p>Link color (#hex)</p>
+				<p>Link color (hex)</p>
 				<input id="link-font-color" type="text" name="link-font-color" value="">
-				<a href="">Clear</a>
+				<a href="#">Clear</a>
 			</div><!-- LINK FONT COLOR-->
 						
 			<div class="setting"><!-- LINK BOLD-->
@@ -635,7 +248,7 @@ a:hover {
 				</select>
 				<a href="#">Clear</a>
 			</div><!--LINK FONT CASE-->	
-		
+			
 			<div class="setting"><!-- TITLE-->
 				<p class="bold">Link background style:</p>
 			</div><!-- TITLE-->	
@@ -876,8 +489,12 @@ a:hover {
 				<p>Corner radius (px)</p>
 				<input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
 				<a href="">Clear</a>
-			</div><!-- BOTTOM LEFT CORNER-->		
------
+			</div><!-- BOTTOM LEFT CORNER-->
+			
+			<div class="setting grey"><!-- TITLE-->
+				<h2>Links on hover style</h2>
+			</div><!-- TITLE-->
+			
 			<div class="setting"><!-- TITLE-->
 				<p class="bold">Hover style:</p>
 			</div><!-- TITLE-->		
@@ -901,9 +518,9 @@ a:hover {
 			</div><!-- HOVER FONT SIZE-->
 
 			<div class="setting"><!-- HOVER FONT COLOR-->
-				<p>Hover color (#hex)</p>
+				<p>Hover color (hex)</p>
 				<input id="hover-font-color" type="text" name="hover-font-color" value="">
-				<a href="">Clear</a>
+				<a href="#">Clear</a>
 			</div><!-- HOVER FONT COLOR-->
 						
 			<div class="setting"><!-- HOVER BOLD-->
@@ -985,6 +602,251 @@ a:hover {
 			</div><!--HOVER FONT CASE-->
 			
 			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover background style:</p>
+			</div><!-- TITLE-->	
+				
+			<div class="setting"><!-- BACKGROUND COLOR-->
+				<p>Background fill (hex)</p>
+				<input id="bgd-color" type="text" name="bgd-color" value="">
+				<a href="#">Clear</a>
+			</div><!-- BACKGROUND COLOR-->
+
+			<div class="setting"><!-- BACKGROUND IMAGE-->
+				<p>Image name</p>
+				<input id="image-name" type="text" name="image-name" value="">
+				<button id="upload-image">Upload</button>
+				<a href="">Clear</a>
+			</div><!-- BACKGROUND IMAGE-->
+			
+			<div class="setting"><!-- IMAGE REPEAT-->
+				<p>Image repeat</p>
+				<select id="image-repeat">
+					  <option value="repeat">Repeat</option>
+					  <option value="no-repeat">No repeat</option>
+					  <option value="repeat-across">Repeat across</option>
+					  <option value="repeat-down">Repeat down</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- IMAGE REPEAT-->		
+			
+			<div class="setting"><!-- HORIZONTAL ALIGN-->
+				<p>Horizontal align</p>
+				<select id="h-align-image">
+					  <option value="left">Left</option>
+					  <option value="center">Center</option>
+					  <option value="right">Right</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- HORIZONTAL ALIGN-->
+			
+			<div class="setting"><!-- VERTICAL ALIGN-->
+				<p>Vertical align</p>
+				<select id="v-align-image">
+					  <option value="top">Top</option>
+					  <option value="middle">Middle</option>
+					  <option value="bottom">Bottom</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- VERTICAL ALIGN-->
+				
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover border - All sides:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover border - Left:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover border - Right:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover border - Top:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover border - Bottom:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover style all corners:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- All CORNERS-->
+				<p>Corner radius (px)</p>
+				<input id="radius-all" type="text" name="radius-all" value="">
+				<a href="">Clear</a>
+			</div><!-- ALL CORNERS-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover style top left corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- TOP LEFT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-top-left" type="text" name="radius-top-left" value="">
+				<a href="">Clear</a>
+			</div><!-- TOP LEFT CORNER-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover style top right corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- TOP RIGHT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-top-right" type="text" name="radius-top-right" value="">
+				<a href="">Clear</a>
+			</div><!-- TOP RIGHT CORNER-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover style bottom right corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- BOTTOM RIGHT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-bottom-right" type="text" name="radius-bottom-right" value="">
+				<a href="">Clear</a>
+			</div><!-- BOTTOM RIGHT CORNER-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Hover style bottom left corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- BOTTOM LEFT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
+				<a href="">Clear</a>
+			</div><!-- BOTTOM LEFT CORNER-->
+			
+			<div class="setting grey"><!-- TITLE-->
+				<h2>Links on click style</h2>
+			</div><!-- TITLE-->			
+
+			<div class="setting"><!-- TITLE-->
 				<p class="bold">Click style:</p>
 			</div><!-- TITLE-->		
 			
@@ -1007,9 +869,9 @@ a:hover {
 			</div><!-- CLICK FONT SIZE-->
 
 			<div class="setting"><!-- CLICK FONT COLOR-->
-				<p>Click color (#hex)</p>
+				<p>Click color (hex)</p>
 				<input id="click-font-color" type="text" name="click-font-color" value="">
-				<a href="">Clear</a>
+				<a href="#">Clear</a>
 			</div><!-- CLICK FONT COLOR-->
 						
 			<div class="setting"><!-- CLICK BOLD-->
@@ -1091,6 +953,251 @@ a:hover {
 			</div><!--CLICK FONT CASE-->
 			
 			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click background style:</p>
+			</div><!-- TITLE-->	
+				
+			<div class="setting"><!-- BACKGROUND COLOR-->
+				<p>Background fill (hex)</p>
+				<input id="bgd-color" type="text" name="bgd-color" value="">
+				<a href="#">Clear</a>
+			</div><!-- BACKGROUND COLOR-->
+
+			<div class="setting"><!-- BACKGROUND IMAGE-->
+				<p>Image name</p>
+				<input id="image-name" type="text" name="image-name" value="">
+				<button id="upload-image">Upload</button>
+				<a href="">Clear</a>
+			</div><!-- BACKGROUND IMAGE-->
+			
+			<div class="setting"><!-- IMAGE REPEAT-->
+				<p>Image repeat</p>
+				<select id="image-repeat">
+					  <option value="repeat">Repeat</option>
+					  <option value="no-repeat">No repeat</option>
+					  <option value="repeat-across">Repeat across</option>
+					  <option value="repeat-down">Repeat down</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- IMAGE REPEAT-->		
+			
+			<div class="setting"><!-- HORIZONTAL ALIGN-->
+				<p>Horizontal align</p>
+				<select id="h-align-image">
+					  <option value="left">Left</option>
+					  <option value="center">Center</option>
+					  <option value="right">Right</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- HORIZONTAL ALIGN-->
+			
+			<div class="setting"><!-- VERTICAL ALIGN-->
+				<p>Vertical align</p>
+				<select id="v-align-image">
+					  <option value="top">Top</option>
+					  <option value="middle">Middle</option>
+					  <option value="bottom">Bottom</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- VERTICAL ALIGN-->
+				
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click border - All sides:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click border - Left:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click border - Right:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click border - Top:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click border - Bottom:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BORDER COLOR-->
+				<p>Line color (#hex)</p>
+				<input id="border-all-color" type="text" name="border-all-color" value="">
+				<a href="">Clear</a>
+			</div><!-- BORDER COLOR-->
+			
+			<div class="setting"><!-- BORDER WIDTH-->
+				<p>Border width (px)</p>
+				<input id="border-width-all" type="text" name="border-width-all" value="">
+				<a href="#">Clear</a>
+			</div><!-- BORDER WIDTH-->
+
+			<div class="setting line"><!-- BORDER STYLE-->
+				<p>Border style</p>
+				<select id="border-style-all">
+					  <option value="solid">Solid</option>
+					  <option value="dotted">Dotted</option>
+					  <option value="dashed">Dashed</option>
+					  <option value="double">Double</option>
+					  <option value="cleared"></option>
+				</select>
+				<a href="#">Clear</a>
+			</div><!-- BORDER STYLE-->
+
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click style all corners:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- All CORNERS-->
+				<p>Corner radius (px)</p>
+				<input id="radius-all" type="text" name="radius-all" value="">
+				<a href="">Clear</a>
+			</div><!-- ALL CORNERS-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click style top left corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- TOP LEFT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-top-left" type="text" name="radius-top-left" value="">
+				<a href="">Clear</a>
+			</div><!-- TOP LEFT CORNER-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click style top right corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- TOP RIGHT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-top-right" type="text" name="radius-top-right" value="">
+				<a href="">Clear</a>
+			</div><!-- TOP RIGHT CORNER-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click style bottom right corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- BOTTOM RIGHT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-bottom-right" type="text" name="radius-bottom-right" value="">
+				<a href="">Clear</a>
+			</div><!-- BOTTOM RIGHT CORNER-->
+			
+			<div class="setting"><!-- TITLE-->
+				<p class="bold">Click style bottom left corner:</p>
+			</div><!-- TITLE-->
+			
+			<div class="setting line"><!-- BOTTOM LEFT CORNER-->
+				<p>Corner radius (px)</p>
+				<input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
+				<a href="">Clear</a>
+			</div><!-- BOTTOM LEFT CORNER-->
+			
+			<div class="setting grey"><!-- TITLE-->
+				<h2>Links on visited style</h2>
+			</div><!-- TITLE-->
+		
+			<div class="setting"><!-- TITLE-->
 				<p class="bold">Visited style:</p>
 			</div><!-- TITLE-->		
 			
@@ -1113,9 +1220,9 @@ a:hover {
 			</div><!-- VISITED FONT SIZE-->
 
 			<div class="setting"><!-- VISITED FONT COLOR-->
-				<p>Visited color (#hex)</p>
+				<p>Visited color (hex)</p>
 				<input id="visited-font-color" type="text" name="visited-font-color" value="">
-				<a href="">Clear</a>
+				<a href="#">Clear</a>
 			</div><!-- VISITED FONT COLOR-->
 						
 			<div class="setting"><!-- VISITED BOLD-->
@@ -1195,122 +1302,9 @@ a:hover {
 				</select>
 				<a href="#">Clear</a>
 			</div><!--VISITED FONT CASE-->
-		</div><!-- END LINKS PANEL-->
-		
-		<div class="panel"><!-- MENU PANEL -->
-
-			<div class="setting grey"><!-- TITLE-->
-				<h2>Menu style</h2>
-			</div><!-- TITLE-->
-		
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item style:</p>
-			</div><!-- TITLE-->		
-			
-			<div class="setting"><!-- Menu item FONT -->
-				<p>Menu item font</p>
-				<select id="Menu item-font">
-					  <option value="ariel">Ariel</option>
-					  <option value="helvetica">Helvetica</option>
-					  <option value="times new roman">Times New Roman</option>
-					  <option value="verdana">Verdana</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu item  FONT -->
-			
-			<div class="setting"><!-- Menu item FONT SIZE-->
-				<p>Menu item size (px)</p>
-				<input id="click-font-size" type="text" name="click-font-size" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu item FONT SIZE-->
-
-			<div class="setting"><!-- Menu item FONT COLOR-->
-				<p>Menu item color (hex)</p>
-				<input id="Menu item-font-color" type="text" name="Menu item-font-color" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu item FONT COLOR-->
-						
-			<div class="setting"><!-- Menu item BOLD-->
-				<p>Bold</p>
-				<select id="Menu item-bold">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unbold">Un-bold</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu item BOLD-->
-			
-			<div class="setting"><!-- Menu item ITALIC-->
-				<p>Italic</p>
-				<select id="Menu item-italic">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unitalic">Un-Italic</option>
-					  <option value="cleared"></option>
-				</select>
-			</div><!-- Menu item ITALIC-->					  
-					  
-			<div class="setting"><!-- Menu item UNDERINE-->
-				<p>Underline</p>
-				<select id="Menu item-underline">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="ununderline">Un-Underline</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu item UNDERINE-->
-			
-			<div class="setting"><!-- Menu item HORIZONTAL ALIGN-->
-				<p>Horizontal align</p>
-				<select id="h-align-text-Menu item">
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>
-					  <option value="right">Right</option>
-					  <option value="justified">Justified</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu item HORIZONTAL ALIGN-->
-			
-			<div class="setting"><!-- Menu item VERTICAL ALIGN-->
-				<p>Vertical align</p>
-				<select id="v-align-text-Menu item">
-					  <option value="top">Top</option>
-					  <option value="middle">Middle</option>
-					  <option value="bottom">Bottom</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu item VERTICAL ALIGN-->
-			
-			<div class="setting"><!-- Menu item PADDING-->
-				<p>Padding (px)</p>
-				<input id="Menu item-padding" type="text" name="Menu item-padding" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu item PADDING-->
-			
-			<div class="setting"><!-- Menu item LINE SPACING-->
-				<p>Line spacing (px)</p>
-				<input id="Menu item-line-spacing" type="text" name="Menu item-spacing" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu item LINE SPACING-->
-			
-			<div class="setting line"><!-- Menu item FONT CASE-->
-				<p>Menu item case</p>
-				<select id="Menu item-font-case">
-					  <option value="normal">Sentence</option>
-					  <option value="all-caps">All caps</option>
-					  <option value="lowercase">Lowercase</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!--Menu item FONT CASE-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item background style:</p>
+				<p class="bold">Visited background style:</p>
 			</div><!-- TITLE-->	
 				
 			<div class="setting"><!-- BACKGROUND COLOR-->
@@ -1361,7 +1355,7 @@ a:hover {
 			</div><!-- VERTICAL ALIGN-->
 				
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item border - All sides:</p>
+				<p class="bold">Visited border - All sides:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting"><!-- BORDER COLOR-->
@@ -1389,7 +1383,7 @@ a:hover {
 			</div><!-- BORDER STYLE-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item border - Left:</p>
+				<p class="bold">Visited border - Left:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting"><!-- BORDER COLOR-->
@@ -1417,7 +1411,7 @@ a:hover {
 			</div><!-- BORDER STYLE-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item border - Right:</p>
+				<p class="bold">Visited border - Right:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting"><!-- BORDER COLOR-->
@@ -1445,7 +1439,7 @@ a:hover {
 			</div><!-- BORDER STYLE-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item border - Top:</p>
+				<p class="bold">Visited border - Top:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting"><!-- BORDER COLOR-->
@@ -1473,7 +1467,7 @@ a:hover {
 			</div><!-- BORDER STYLE-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item border - Bottom:</p>
+				<p class="bold">Visited border - Bottom:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting"><!-- BORDER COLOR-->
@@ -1501,7 +1495,7 @@ a:hover {
 			</div><!-- BORDER STYLE-->
 
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item style all corners:</p>
+				<p class="bold">Visited style all corners:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting line"><!-- All CORNERS-->
@@ -1511,7 +1505,7 @@ a:hover {
 			</div><!-- ALL CORNERS-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item style top left corner:</p>
+				<p class="bold">Visited style top left corner:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting line"><!-- TOP LEFT CORNER-->
@@ -1521,7 +1515,7 @@ a:hover {
 			</div><!-- TOP LEFT CORNER-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item style top right corner:</p>
+				<p class="bold">Visited style top right corner:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting line"><!-- TOP RIGHT CORNER-->
@@ -1531,7 +1525,7 @@ a:hover {
 			</div><!-- TOP RIGHT CORNER-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item style bottom right corner:</p>
+				<p class="bold">Visited style bottom right corner:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting line"><!-- BOTTOM RIGHT CORNER-->
@@ -1541,7 +1535,7 @@ a:hover {
 			</div><!-- BOTTOM RIGHT CORNER-->
 			
 			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu item style bottom left corner:</p>
+				<p class="bold">Visited style bottom left corner:</p>
 			</div><!-- TITLE-->
 			
 			<div class="setting line"><!-- BOTTOM LEFT CORNER-->
@@ -1550,701 +1544,7 @@ a:hover {
 				<a href="">Clear</a>
 			</div><!-- BOTTOM LEFT CORNER-->
 			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover style:</p>
-			</div><!-- TITLE-->		
-			
-			<div class="setting"><!-- Menu hover FONT -->
-				<p>Menu hover font</p>
-				<select id="Menu hover-font">
-					  <option value="ariel">Ariel</option>
-					  <option value="helvetica">Helvetica</option>
-					  <option value="times new roman">Times New Roman</option>
-					  <option value="verdana">Verdana</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu hover  FONT -->
-			
-			<div class="setting"><!-- Menu hover FONT SIZE-->
-				<p>Menu hover size (px)</p>
-				<input id="click-font-size" type="text" name="click-font-size" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu hover FONT SIZE-->
-
-			<div class="setting"><!-- Menu hover FONT COLOR-->
-				<p>Menu hover color (hex)</p>
-				<input id="Menu hover-font-color" type="text" name="Menu hover-font-color" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu hover FONT COLOR-->
-						
-			<div class="setting"><!-- Menu hover BOLD-->
-				<p>Bold</p>
-				<select id="Menu hover-bold">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unbold">Un-bold</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu hover BOLD-->
-			
-			<div class="setting"><!-- Menu hover ITALIC-->
-				<p>Italic</p>
-				<select id="Menu hover-italic">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unitalic">Un-Italic</option>
-					  <option value="cleared"></option>
-				</select>
-			</div><!-- Menu hover ITALIC-->					  
-					  
-			<div class="setting"><!-- Menu hover UNDERINE-->
-				<p>Underline</p>
-				<select id="Menu hover-underline">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="ununderline">Un-Underline</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu hover UNDERINE-->
-			
-			<div class="setting"><!-- Menu hover HORIZONTAL ALIGN-->
-				<p>Horizontal align</p>
-				<select id="h-align-text-Menu hover">
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>
-					  <option value="right">Right</option>
-					  <option value="justified">Justified</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu hover HORIZONTAL ALIGN-->
-			
-			<div class="setting"><!-- Menu hover VERTICAL ALIGN-->
-				<p>Vertical align</p>
-				<select id="v-align-text-Menu hover">
-					  <option value="top">Top</option>
-					  <option value="middle">Middle</option>
-					  <option value="bottom">Bottom</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Menu hover VERTICAL ALIGN-->
-			
-			<div class="setting"><!-- Menu hover PADDING-->
-				<p>Padding (px)</p>
-				<input id="Menu hover-padding" type="text" name="Menu hover-padding" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu hover PADDING-->
-			
-			<div class="setting"><!-- Menu hover LINE SPACING-->
-				<p>Line spacing (px)</p>
-				<input id="Menu hover-line-spacing" type="text" name="Menu hover-spacing" value="">
-				<a href="#">Clear</a>
-			</div><!-- Menu hover LINE SPACING-->
-			
-			<div class="setting line"><!-- Menu hover FONT CASE-->
-				<p>Menu hover case</p>
-				<select id="Menu hover-font-case">
-					  <option value="normal">Sentence</option>
-					  <option value="all-caps">All caps</option>
-					  <option value="lowercase">Lowercase</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!--Menu hover FONT CASE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover background style:</p>
-			</div><!-- TITLE-->	
-				
-			<div class="setting"><!-- BACKGROUND COLOR-->
-				<p>Background fill (hex)</p>
-				<input id="bgd-color" type="text" name="bgd-color" value="">
-				<a href="#">Clear</a>
-			</div><!-- BACKGROUND COLOR-->
-
-			<div class="setting"><!-- BACKGROUND IMAGE-->
-				<p>Image name</p>
-				<input id="image-name" type="text" name="image-name" value="">
-				<button id="upload-image">Upload</button>
-				<a href="">Clear</a>
-			</div><!-- BACKGROUND IMAGE-->
-			
-			<div class="setting"><!-- IMAGE REPEAT-->
-				<p>Image repeat</p>
-				<select id="image-repeat">
-					  <option value="repeat">Repeat</option>
-					  <option value="no-repeat">No repeat</option>
-					  <option value="repeat-across">Repeat across</option>
-					  <option value="repeat-down">Repeat down</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- IMAGE REPEAT-->		
-			
-			<div class="setting"><!-- HORIZONTAL ALIGN-->
-				<p>Horizontal align</p>
-				<select id="h-align-image">
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>
-					  <option value="right">Right</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- HORIZONTAL ALIGN-->
-			
-			<div class="setting"><!-- VERTICAL ALIGN-->
-				<p>Vertical align</p>
-				<select id="v-align-image">
-					  <option value="top">Top</option>
-					  <option value="middle">Middle</option>
-					  <option value="bottom">Bottom</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- VERTICAL ALIGN-->
-				
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover border - All sides:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover border - Left:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover border - Right:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover border - Top:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover border - Bottom:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover style all corners:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- All CORNERS-->
-				<p>Corner radius (px)</p>
-				<input id="radius-all" type="text" name="radius-all" value="">
-				<a href="">Clear</a>
-			</div><!-- ALL CORNERS-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover style top left corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- TOP LEFT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-top-left" type="text" name="radius-top-left" value="">
-				<a href="">Clear</a>
-			</div><!-- TOP LEFT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover style top right corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- TOP RIGHT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-top-right" type="text" name="radius-top-right" value="">
-				<a href="">Clear</a>
-			</div><!-- TOP RIGHT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover style bottom right corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- BOTTOM RIGHT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-bottom-right" type="text" name="radius-bottom-right" value="">
-				<a href="">Clear</a>
-			</div><!-- BOTTOM RIGHT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Menu hover style bottom left corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- BOTTOM LEFT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
-				<a href="">Clear</a>
-			</div><!-- BOTTOM LEFT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page style:</p>
-			</div><!-- TITLE-->		
-			
-			<div class="setting"><!-- Current page FONT -->
-				<p>Current page font</p>
-				<select id="Current page-font">
-					  <option value="ariel">Ariel</option>
-					  <option value="helvetica">Helvetica</option>
-					  <option value="times new roman">Times New Roman</option>
-					  <option value="verdana">Verdana</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Current page  FONT -->
-			
-			<div class="setting"><!-- Current page FONT SIZE-->
-				<p>Current page size (px)</p>
-				<input id="click-font-size" type="text" name="click-font-size" value="">
-				<a href="#">Clear</a>
-			</div><!-- Current page FONT SIZE-->
-
-			<div class="setting"><!-- Current page FONT COLOR-->
-				<p>Current page color (hex)</p>
-				<input id="Current page-font-color" type="text" name="Current page-font-color" value="">
-				<a href="#">Clear</a>
-			</div><!-- Current page FONT COLOR-->
-						
-			<div class="setting"><!-- Current page BOLD-->
-				<p>Bold</p>
-				<select id="Current page-bold">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unbold">Un-bold</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Current page BOLD-->
-			
-			<div class="setting"><!-- Current page ITALIC-->
-				<p>Italic</p>
-				<select id="Current page-italic">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="unitalic">Un-Italic</option>
-					  <option value="cleared"></option>
-				</select>
-			</div><!-- Current page ITALIC-->					  
-					  
-			<div class="setting"><!-- Current page UNDERINE-->
-				<p>Underline</p>
-				<select id="Current page-underline">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="ununderline">Un-Underline</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Current page UNDERINE-->
-			
-			<div class="setting"><!-- Current page HORIZONTAL ALIGN-->
-				<p>Horizontal align</p>
-				<select id="h-align-text-Current page">
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>
-					  <option value="right">Right</option>
-					  <option value="justified">Justified</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Current page HORIZONTAL ALIGN-->
-			
-			<div class="setting"><!-- Current page VERTICAL ALIGN-->
-				<p>Vertical align</p>
-				<select id="v-align-text-Current page">
-					  <option value="top">Top</option>
-					  <option value="middle">Middle</option>
-					  <option value="bottom">Bottom</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- Current page VERTICAL ALIGN-->
-			
-			<div class="setting"><!-- Current page PADDING-->
-				<p>Padding (px)</p>
-				<input id="Current page-padding" type="text" name="Current page-padding" value="">
-				<a href="#">Clear</a>
-			</div><!-- Current page PADDING-->
-			
-			<div class="setting"><!-- Current page LINE SPACING-->
-				<p>Line spacing (px)</p>
-				<input id="Current page-line-spacing" type="text" name="Current page-spacing" value="">
-				<a href="#">Clear</a>
-			</div><!-- Current page LINE SPACING-->
-			
-			<div class="setting line"><!-- Current page FONT CASE-->
-				<p>Current page case</p>
-				<select id="Current page-font-case">
-					  <option value="normal">Sentence</option>
-					  <option value="all-caps">All caps</option>
-					  <option value="lowercase">Lowercase</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!--Current page FONT CASE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page background style:</p>
-			</div><!-- TITLE-->	
-				
-			<div class="setting"><!-- BACKGROUND COLOR-->
-				<p>Background fill (hex)</p>
-				<input id="bgd-color" type="text" name="bgd-color" value="">
-				<a href="#">Clear</a>
-			</div><!-- BACKGROUND COLOR-->
-
-			<div class="setting"><!-- BACKGROUND IMAGE-->
-				<p>Image name</p>
-				<input id="image-name" type="text" name="image-name" value="">
-				<button id="upload-image">Upload</button>
-				<a href="">Clear</a>
-			</div><!-- BACKGROUND IMAGE-->
-			
-			<div class="setting"><!-- IMAGE REPEAT-->
-				<p>Image repeat</p>
-				<select id="image-repeat">
-					  <option value="repeat">Repeat</option>
-					  <option value="no-repeat">No repeat</option>
-					  <option value="repeat-across">Repeat across</option>
-					  <option value="repeat-down">Repeat down</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- IMAGE REPEAT-->		
-			
-			<div class="setting"><!-- HORIZONTAL ALIGN-->
-				<p>Horizontal align</p>
-				<select id="h-align-image">
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>
-					  <option value="right">Right</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- HORIZONTAL ALIGN-->
-			
-			<div class="setting"><!-- VERTICAL ALIGN-->
-				<p>Vertical align</p>
-				<select id="v-align-image">
-					  <option value="top">Top</option>
-					  <option value="middle">Middle</option>
-					  <option value="bottom">Bottom</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- VERTICAL ALIGN-->
-				
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page border - All sides:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page border - Left:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page border - Right:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page border - Top:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page border - Bottom:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BORDER COLOR-->
-				<p>Line color (#hex)</p>
-				<input id="border-all-color" type="text" name="border-all-color" value="">
-				<a href="">Clear</a>
-			</div><!-- BORDER COLOR-->
-			
-			<div class="setting"><!-- BORDER WIDTH-->
-				<p>Border width (px)</p>
-				<input id="border-width-all" type="text" name="border-width-all" value="">
-				<a href="#">Clear</a>
-			</div><!-- BORDER WIDTH-->
-
-			<div class="setting line"><!-- BORDER STYLE-->
-				<p>Border style</p>
-				<select id="border-style-all">
-					  <option value="solid">Solid</option>
-					  <option value="dotted">Dotted</option>
-					  <option value="dashed">Dashed</option>
-					  <option value="double">Double</option>
-					  <option value="cleared"></option>
-				</select>
-				<a href="#">Clear</a>
-			</div><!-- BORDER STYLE-->
-
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page style all corners:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- All CORNERS-->
-				<p>Corner radius (px)</p>
-				<input id="radius-all" type="text" name="radius-all" value="">
-				<a href="">Clear</a>
-			</div><!-- ALL CORNERS-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page style top left corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- TOP LEFT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-top-left" type="text" name="radius-top-left" value="">
-				<a href="">Clear</a>
-			</div><!-- TOP LEFT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page style top right corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- TOP RIGHT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-top-right" type="text" name="radius-top-right" value="">
-				<a href="">Clear</a>
-			</div><!-- TOP RIGHT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page style bottom right corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- BOTTOM RIGHT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-bottom-right" type="text" name="radius-bottom-right" value="">
-				<a href="">Clear</a>
-			</div><!-- BOTTOM RIGHT CORNER-->
-			
-			<div class="setting"><!-- TITLE-->
-				<p class="bold">Current page style bottom left corner:</p>
-			</div><!-- TITLE-->
-			
-			<div class="setting line"><!-- BOTTOM LEFT CORNER-->
-				<p>Corner radius (px)</p>
-				<input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
-				<a href="">Clear</a>
-			</div><!-- BOTTOM LEFT CORNER-->
-			
-	</div> <!-- MENU PANEL -->
+	</div> <!-- end of monster panel -->
 			
 </body>
 </html>
