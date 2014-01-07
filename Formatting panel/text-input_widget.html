@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Text widget</title>
+		<title>Text input widget</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 	</head>
@@ -139,22 +139,22 @@ a:hover {
 	margin-left: 22px;
 }
 
-#widget-name, #tooltip{
+#widget-name, #tooltip, #default{
 	display: inline-block;
 	width: 128px;
 }
 	</style>
 	
 <body>
-		<div class="panel"><!-- TEXT PANEL -->
+		<div class="panel"><!-- TEXT INPUT PANEL -->
 			
 			<div class="setting heading"><!-- TITLE-->
-				<h2>Text widget</h2>
+				<h2>Text input widget</h2>
 			</div><!-- TITLE-->
 			
 			<div class="setting property"><!-- WIDGET NAME-->
 				<p>Widget name</p>
-			    <input id="widget-name" type="text" name="widget-name" value="Username">
+			    <input id="widget-name" type="text" name="widget-name" value="Text input 1 ">
 			</div><!-- WIDGET NAME-->
 			
 			<div class="setting property"><!-- WIDGET SIZE-->
@@ -484,6 +484,41 @@ a:hover {
 			<div class="setting heading"><!-- TITLE-->
 				<h2>Properties</h2>
 			</div><!-- TITLE-->
+			
+			<div class="setting property"><!-- TYPE-->
+				<p>Type</p>
+			    <select id="type">
+					  <option value="text">Text</option>
+					  <option value="password">Password</option>
+					  <option value="hidden">Hidden</option>
+				</select>
+			</div><!-- TYPE-->	
+			
+			<div class="setting property"><!-- DEFAULT-->
+				<p>Default text</p>
+			    <input id="default" type="text" name="default" value="">
+			</div><!-- DEFAULT-->
+			
+			<div class="setting property"><!-- CHARACTER LIMIT-->
+				<p>Character limit</p>
+			    <input id="chr-limit" type="text" name="chr-limit" value="">
+			</div><!-- CHARACTER LIMIT-->
+			
+			<div class="setting property"><!--READ ONLY-->
+				<p>Read only</p>
+			    <select id="read-only">
+					  <option value="no">No</option>
+					  <option value="Yes">Yes</option>
+				</select>
+			</div><!-- READ ONLY-->	
+			
+			<div class="setting property"><!--DISABLED-->
+				<p>Disabled</p>
+			    <select id="disabled">
+					  <option value="no">No</option>
+					  <option value="Yes">Yes</option>
+				</select>
+			</div><!-- DISABLED-->	
 			
 			<div class="setting property"><!-- DRAGGABLE-->
 				<p>Draggable</p>
