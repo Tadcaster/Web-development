@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Section widget</title>
+		<title>Page</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 	</head>
@@ -143,18 +143,23 @@ a:hover {
 	display: inline-block;
 	width: 128px;
 }
+
+#tab-order {
+	margin: 0px;
+	width: 136px;
+}
 	</style>
 	
 <body>
 		<div class="panel"><!-- SECTION PANEL -->
 			
 			<div class="setting heading"><!-- TITLE-->
-				<h2>Section widget</h2>
+				<h2>Page</h2>
 			</div><!-- TITLE-->
 			
 			<div class="setting property"><!-- WIDGET NAME-->
 				<p>Widget name</p>
-			    <input id="widget-name" type="text" name="widget-name" value="Section 1">
+			    <input id="widget-name" type="text" name="widget-name" value="Page 1">
 			</div><!-- WIDGET NAME-->
 			
 			<div class="setting property"><!-- WIDGET SIZE-->
@@ -495,13 +500,28 @@ a:hover {
 				<h2>Properties</h2>
 			</div><!-- TITLE-->
 
-			<div class="setting property"><!-- LAYOUT-->
-				<p>Layout</p>
-			    <select id="layout">
-					  <option value="absolute">Absolute position</option>
-					  <option value="vertical">Vertical stack</option>
+			<div class="setting property"><!-- PAGE TYPE-->
+				<p>Page type</p>
+			    <select id="page-type">
+					  <option value="page">Page</option>
+					  <option value="iPhone5">iPhone 5</option>
+					  <option value="iPhone4">iPhone 4</option>
+					  <option value="iPad2">iPad 2</option>
+					  <option value="android-phone">Android phone</option>
+					  <option value="android-tablet">Android tablet</option>
+					  <option value="Windows phone">Windows tablet</option>
 				</select>
-			</div><!-- LAYOUT-->
+			</div><!-- PAGE TYPE-->
+			
+			<div class="setting property"><!-- ALIGN-->
+				<p>Align</p>
+			    <select id="align">
+					  <option value="fit-to-window">Fit to window</option>
+					  <option value="left">Left</option>
+					  <option value="center">Center</option>/option>
+					  <option value="right">Right</option>/option>
+				</select>
+			</div><!-- ALIGN-->
 
 			<div class="setting property"><!-- HORIZONTAL SCROLLING-->
 				<p>Horizontal scrolling</p>
@@ -521,10 +541,10 @@ a:hover {
 				</select>
 			</div><!-- VERTICAL SCROLLING-->
 			
-			<div class="setting property"><!-- TOOLTIP-->
-				<p>Tooltip</p>
-			    <input id="tooltip" type="text" name="tooltip" value="">
-			</div><!-- TOOLTIP-->					
+			<div class="setting property"><!-- TAB ORDER-->
+				<p>Set tab order</p>			
+				<button id="tab-order">Tab order</button>				
+			</div><!-- TAB ORDER-->
 						
 	</div> <!-- end of monster panel -->
 			
