@@ -49,15 +49,15 @@ html, body {
 	display: inline-block;
 	float: left;
 	width: 320px;
-	height: 450px;
-	overflow: auto;
+	height: auto;
+	overflow: scroll;
 	margin-left: 20px;
 	margin-top:20px;
 	background-color: #f0f0f0;
 	border: 1px solid #c0c0c0;
 }
 
-.setting {
+label, .setting {
 	display: block;
 	height: 25px;
 	padding: 5px;
@@ -101,10 +101,6 @@ a {
 	text-decoration:none;
 }
 
-button {
-	margin-left:18px;
-}
-
 a:hover {
 	display: inline-block;
 	float: right;
@@ -113,12 +109,24 @@ a:hover {
 	text-decoration: underline;
 }
 
+button {
+	margin-left:18px;
+}
+
+.form-checkbox {
+	display: inline;
+	float: right;
+
+	margin-top: -15px;
+	padding: 0px;
+}
+
 .bold {
 	font-weight: bold;
 	width: 100%;
 }
 
-.heading {
+label, .heading {
 	height:18px;
 	background: #e0e0e0;
 }
@@ -143,6 +151,11 @@ a:hover {
 	display: inline-block;
 	width: 128px;
 }
+
+			label {display:block;}
+			label ~ input[type="checkbox"] ~ div {display:none; margin-left:1em;}
+			label ~ input[type="checkbox"]:checked ~ div {display:inline;}
+			
 	</style>
 	
 <body>
@@ -252,10 +265,11 @@ a:hover {
 				<a href="#">Reset</a>
 			</div><!-- FONT CASE-->			
 			
-			<div class="setting heading"><!-- TITLE-->
-				<h2>Background</h2>
-			</div><!-- TITLE-->
-			
+
+				<label><h2>Background</h2></label><input class="form-checkbox" type="checkbox" name="background-toggle" value="">
+
+		<div class="background"><!-- BACKFROUND-->
+				
 			<div class="setting"><!-- BACKGROUND COLOR-->
 				<p>Background color(#)</p>
 				<input id="bgd-color" type="text" name="bgd-color" value="">
@@ -302,11 +316,11 @@ a:hover {
 				</select>
 				<a href="#">Reset</a>
 			</div><!-- VERTICAL ALIGN-->
+		</div><!-- BACKFROUND-->
 			
-			<div class="setting heading"><!-- TITLE-->
-				<h2>Borders</h2>
-			</div><!-- TITLE-->
-			
+				<label><h2>Borders</h2></label><input class="form-checkbox" type="checkbox" name="border-toggle" value="">
+
+	<div class="borders"><!-- BORDERS -->		
 			<div class="setting"><!-- TITLE-->
 				<p class="bold">Border - All sides:</p>
 			</div><!-- TITLE-->
@@ -446,11 +460,12 @@ a:hover {
 				</select>
 				<a href="#">Reset</a>
 			</div><!-- BORDER STYLE-->
-	
-			<div class="setting heading"><!-- TITLE-->
-				<h2>Rounded corners</h2>
-			</div><!-- TITLE-->
+	</div><!--BORDERS -->
+
+				<label><h2>Corners</h2></label><input class="form-checkbox" type="checkbox" name="corners-toggle" value="">
+
 			
+	<div class="corners"><!-- CORNERS SETTINGS-->
 			<div class="setting line"><!-- All CORNERS-->
 				<p>All corners</p>
 				<input id="radius-all" type="text" name="radius-all" value="">
@@ -480,10 +495,11 @@ a:hover {
 				<input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
 				<a href="#">Reset</a>
 			</div><!-- BOTTOM LEFT CORNER-->
+	</div><!-- CORNERS SETTINGS-->
 			
-			<div class="setting heading"><!-- TITLE-->
-				<h2>Properties</h2>
-			</div><!-- TITLE-->
+
+				<label><h2>Properties</h2></label>
+
 			
 			<div class="setting property"><!-- TOOLTIP-->
 				<p>Tooltip</p>

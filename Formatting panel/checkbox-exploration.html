@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+	   <meta charset="utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	   <title>Foundation | Testing</title>
+	   <link rel="stylesheet" href="click.css" />
+	   <script src="js/modernizr.js"></script>
+	</head>
+	  
+	<body>    
+
+		<style>
+			label {display:block;}
+			label ~ input[type="checkbox"] ~ div {display:none; margin-left:1em;}
+			label ~ input[type="checkbox"]:checked ~ div {display:inline;}​
+		</style>
+		
+		<div>
+			<label>Box 1:</label>
+			<input class="form-checkbox" type="checkbox">
+			<div>Box 1 is checked.</div>
+		</div>
+		<div>
+			<label>Box 2:</label>
+			<input class="form-checkbox" type="checkbox">
+			<div>Box 2 is checked.</div>
+			</div>
+		<div>
+			<label>Box 3:</label>
+			<input class="form-checkbox" type="checkbox">
+			<div>Box 3 is checked.</div>
+		</div>
+	
+	</body>
+</html>
