@@ -243,12 +243,6 @@ a:hover {
 			<div class="setting heading"><!-- TITLE-->
 				<h2>Background</h2>
 			</div><!-- TITLE-->
-			
-			<div class="setting"><!-- BACKGROUND COLOR-->
-				<p>Background color(#)</p>
-				<input id="bgd-color" type="text" name="bgd-color" value="">
-				<a href="#">Reset</a>
-			</div><!-- BACKGROUND COLOR-->
 
 			<div class="setting"><!-- BACKGROUND IMAGE-->
 				<p>Background image</p>
@@ -473,51 +467,43 @@ a:hover {
 				<h2>Properties</h2>
 			</div><!-- TITLE-->
 
-			<div class="setting property"><!-- PAGE TYPE-->
-				<p>Page type</p>
-			    <select id="page-type">
-					  <option value="page">Page</option>
-					  <option value="iPhone5">iPhone 5</option>
-					  <option value="iPhone4">iPhone 4</option>
-					  <option value="iPad2">iPad 2</option>
-					  <option value="android-phone">Android phone</option>
-					  <option value="android-tablet">Android tablet</option>
-					  <option value="Windows phone">Windows tablet</option>
-				</select>
-			</div><!-- PAGE TYPE-->
+			<div class="setting property"><!-- DEFAULT-->
+				<p>Default text</p>
+			    <input id="default" type="text" name="default" value="">
+			</div><!-- DEFAULT-->
 			
-			<div class="setting property"><!-- ALIGN-->
-				<p>Align</p>
+			<div class="setting property"><!-- FORMAT-->
+				<p>Format</p>
 			    <select id="align">
-					  <option value="fit-to-window">Fit to window</option>
-					  <option value="left">Left</option>
-					  <option value="center">Center</option>/option>
-					  <option value="right">Right</option>/option>
+					  <option value="mm/dd/yyyy">mm/dd/yyyy</option>
+					  <option value="mm-dd-yyyy">mm-dd-yyyy</option>
+					  <option value="mm.dd.yyyy">mm.dd.yyyy</option>/option>
+					  <option value="dd/mm/yyyy">dd/mm/yyyy</option>/option>
+					  <option value="dd-mm-yyyy">dd-mm-yyyy</option>/option>
+					  <option value="dd.mm.yyyy">dd.mm.yyyy</option>/option>
 				</select>
-			</div><!-- ALIGN-->
-
-			<div class="setting property"><!-- HORIZONTAL SCROLLING-->
-				<p>Horizontal scrolling</p>
-			    <select id="h-scrolling">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="auto">Auto</option>/option>
-				</select>
-			</div><!-- HORIZONTAL SCROLLING-->
+			</div><!-- FORMAT-->
 			
-			<div class="setting property"><!-- VERTICAL SCROLLING-->
-				<p>Vertical scrolling</p>
-			    <select id="v-scrolling">
-					  <option value="no">No</option>
-					  <option value="yes">Yes</option>
-					  <option value="auto">Auto</option>/option>
+			<div class="setting property"><!-- LANGUAGE-->
+				<p>Language</p>
+			    <select id="align">
+					  <option value="English">English</option>
+					  <option value="Other">Others be here...</option>
 				</select>
-			</div><!-- VERTICAL SCROLLING-->
+			</div><!-- LANGUAGE-->
 			
-			<div class="setting property"><!-- TAB ORDER-->
-				<p>Set tab order</p>			
-				<button id="tab-order">Tab order</button>				
-			</div><!-- TAB ORDER-->
+			<div class="setting property"><!--DISABLED-->
+				<p>Disabled</p>
+			    <select id="disabled">
+					  <option value="no">No</option>
+					  <option value="Yes">Yes</option>
+				</select>
+			</div><!-- DISABLED-->			
+			
+			<div class="setting property"><!-- TOOLTIP-->
+				<p>Tooltip</p>
+			    <input id="tooltip" type="text" name="tooltip" value="">
+			</div><!-- TOOLTIP-->
 						
 	</div> <!-- end of monster panel -->
 			
