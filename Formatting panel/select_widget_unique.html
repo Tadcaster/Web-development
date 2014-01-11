@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Radio button widget</title>
+		<title>Select widget - unique</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 	</head>
@@ -158,41 +158,37 @@ a:hover {
 	</style>
 	
 <body>
-		<div class="panel"><!-- TEXT INPUT PANEL -->
-			
-			<div class="setting heading"><!-- TITLE-->
-				<h2>Radio button widget</h2>
-			</div><!-- TITLE-->
-			
-			<div class="setting property"><!-- WIDGET NAME-->
-				<p>Widget name</p>
-			    <input id="widget-name" type="text" name="widget-name" value="Radio button 1 ">
-			</div><!-- WIDGET NAME-->
-			
-			<div class="setting property"><!-- WIDGET POSITION-->
-				<p>Position (px)</p>
-				<input id="x-coord" type="text" name="x-coord" value=""><input id="y-coord" type="text" name="y-coord" value="">
-			</div><!-- WIDGET POSITION-->
+		<div class="panel"><!-- PANEL -->
 			
 			<div class="setting heading"><!-- TITLE-->
 				<h2>Properties</h2>
 			</div><!-- TITLE-->
 			
-			<div class="setting property"><!-- MEMBER OF-->
-				<p>Member of</p>
-			    <select id="member">
-					  <option value="set1">Set 1</option>
-					  <option value="set2">Set 2</option>
-				</select>
-			</div><!-- MEMBER OF-->
+			<div class="setting property area"><!-- TEXT AREA-->	
+				<p>Content</p>		
+				<textarea rows="5" cols="35">
+Option 1
+Option 2
+Option 3
+				</textarea>
+			</div><!-- TEXT AREA-->
 						
 			<div class="setting property"><!-- DEFAULT-->
 				<p>Default</p>
-			    <select id="check">
-					  <option value="unchecked">Unchecked</option>
-					  <option value="checked">Checked</option>
+			    <select id="type">
+					  <option value="option1">Option 1</option>
+					  <option value="option2">Option 2</option>
+					  <option value="option3">Option 3</option>
 				</select>
-			</div><!-- DEFAULT-->		
+			</div><!-- DEFAULT-->	
+			
+			<div class="setting property"><!--READ ONLY-->
+				<p>Multiple selections</p>
+			    <select id="read-only">
+					  <option value="no">No</option>
+					  <option value="Yes">Yes</option>
+				</select>
+			</div><!-- READ ONLY-->	
 			
 			<div class="setting property"><!--DISABLED-->
 				<p>Disabled</p>

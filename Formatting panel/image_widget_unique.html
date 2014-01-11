@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Radio button widget</title>
+		<title>Image widget - unique</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 	</head>
@@ -32,7 +32,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, textarea, mark, audio, video, div {
+time, mark, audio, video, div {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -64,7 +64,7 @@ html, body {
 	padding-top: 8px;
 }
 
-p{
+p {
 	display: inline-block;
 	width: 110px;
 	font-size: 12px;
@@ -91,14 +91,6 @@ input {
 	position: inherit;
 	width: 50px;
 	left: 50px;
-}
-
-textarea {
-	font-size: 12px;
-	color: #404040;
-	text-align: left;
-	border: 1px solid #c0c0c0;
-	padding: 4px;
 }
 
 a {
@@ -139,68 +131,44 @@ a:hover {
 	border-bottom: 1px solid #c0c0c0;
 }
 
-.area {
-	height:auto;
-}
-
 #reset-image {
 	width: 135px;
+	margin: 0px;
 }
 
 #y-size, #y-coord {
 	margin-left: 22px;
 }
 
-#widget-name, #tooltip, #default{
+#widget-name, #tooltip{
 	display: inline-block;
 	width: 128px;
 }
 	</style>
 	
 <body>
-		<div class="panel"><!-- TEXT INPUT PANEL -->
-			
-			<div class="setting heading"><!-- TITLE-->
-				<h2>Radio button widget</h2>
-			</div><!-- TITLE-->
-			
-			<div class="setting property"><!-- WIDGET NAME-->
-				<p>Widget name</p>
-			    <input id="widget-name" type="text" name="widget-name" value="Radio button 1 ">
-			</div><!-- WIDGET NAME-->
-			
-			<div class="setting property"><!-- WIDGET POSITION-->
-				<p>Position (px)</p>
-				<input id="x-coord" type="text" name="x-coord" value=""><input id="y-coord" type="text" name="y-coord" value="">
-			</div><!-- WIDGET POSITION-->
+		<div class="panel"><!-- IMAGE PANEL -->
 			
 			<div class="setting heading"><!-- TITLE-->
 				<h2>Properties</h2>
 			</div><!-- TITLE-->
 			
-			<div class="setting property"><!-- MEMBER OF-->
-				<p>Member of</p>
-			    <select id="member">
-					  <option value="set1">Set 1</option>
-					  <option value="set2">Set 2</option>
-				</select>
-			</div><!-- MEMBER OF-->
-						
-			<div class="setting property"><!-- DEFAULT-->
-				<p>Default</p>
-			    <select id="check">
-					  <option value="unchecked">Unchecked</option>
-					  <option value="checked">Checked</option>
-				</select>
-			</div><!-- DEFAULT-->		
+			<div class="setting property"><!-- IMAGE-->
+				<p>Image</p>
+				<input id="image" type="text" name="image" value="">
+				<button id="upload-hover-image">Upload</button>
+			</div><!-- IMAGE-->
 			
-			<div class="setting property"><!--DISABLED-->
-				<p>Disabled</p>
-			    <select id="disabled">
-					  <option value="no">No</option>
-					  <option value="Yes">Yes</option>
-				</select>
-			</div><!-- DISABLED-->	
+			<div class="setting property"><!-- IMAGE SIZE-->
+				<p>Image size</p>
+				<button id="reset-image">Reset image size</button>
+			</div><!-- IMAGE SIZE-->
+			
+			<div class="setting property"><!-- HOVER IMAGE-->
+				<p>Hover image</p>
+				<input id="hover-image" type="text" name="hover-image" value="">
+				<button id="upload-hover-image">Upload</button>
+			</div><!-- HOVER IMAGE-->	
 			
 			<div class="setting property"><!-- TOOLTIP-->
 				<p>Tooltip</p>
