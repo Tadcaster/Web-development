@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Background micro panel</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	</head>
+	
+	<style>
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Resets all styles to a baseline for all browsers
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: 16px sans-serif;
+	vertical-align: baseline;
+}
+
+html, body {
+	height: 100%;
+}
+
+.panel {
+	display: inline-block;
+	float: left;
+	width: 320px;
+	height: auto;
+	overflow: auto;
+	margin-left: 20px;
+	margin-top:20px;
+	background-color: #f0f0f0;
+	border: 1px solid #c0c0c0;
+}
+
+.setting {
+	display: block;
+	height: 25px;
+	padding: 5px;
+	padding-top: 8px;
+}
+
+p {
+	display: inline-block;
+	width: 110px;
+	font-size: 12px;
+	color: #404040;
+}
+
+h2 {
+	display: inline-block;
+	color: #404040;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+select {
+	display: inline-block;
+	position:relative;
+	width: 135px;
+}
+
+input {
+	display: inline-block;
+	position: inherit;
+	width: 50px;
+	left: 50px;
+}
+
+a {
+	float: right;
+	font-size: 10px;
+	color: #404040;
+	margin-top: 6px;
+	text-decoration:none;
+}
+
+button {
+	margin-left:18px;
+}
+
+a:hover {
+	display: inline-block;
+	float: right;
+	font-size: 10px;
+	color: #006fbe;
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+	width: 100%;
+}
+
+.heading {
+	height:18px;
+	background: #e0e0e0;
+}
+
+.property {
+	background: #e0e0e0;
+}
+
+.line {
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#reset-image {
+	width: 135px;
+}
+
+#y-size, #y-coord {
+	margin-left: 22px;
+}
+
+#widget-name, #tooltip{
+	display: inline-block;
+	width: 128px;
+}
+	</style>
+	
+<body>
+		<div class="panel"><!-- TEXT PANEL -->
+			
+
+			<div class="setting heading"><!-- TITLE-->
+				<h2>Background</h2>
+			</div><!-- TITLE-->
+			
+			<div class="setting"><!-- BACKGROUND COLOR-->
+				<p>Background color(#)</p>
+				<input id="bgd-color" type="text" name="bgd-color" value="">
+				<a href="#">Reset</a>
+			</div><!-- BACKGROUND COLOR-->
+
+			<div class="setting"><!-- BACKGROUND IMAGE-->
+				<p>Background image</p>
+				<input id="image-name" type="text" name="image-name" value="">
+				<button id="upload-image">Upload</button>
+				<a href="#">Reset</a>
+			</div><!-- BACKGROUND IMAGE-->
+			
+			<div class="setting"><!-- IMAGE REPEAT-->
+				<p>Image repeat</p>
+				<select id="image-repeat">
+					  <option value="repeat">Repeat</option>
+					  <option value="no-repeat">No repeat</option>
+					  <option value="repeat-across">Repeat across</option>
+					  <option value="repeat-down">Repeat down</option>
+					  
+				</select>
+				<a href="#">Reset</a>
+			</div><!-- IMAGE REPEAT-->		
+			
+			<div class="setting"><!-- HORIZONTAL ALIGN-->
+				<p>Horizontal align</p>
+				<select id="h-align-image">
+					  <option value="left">Left</option>
+					  <option value="center">Center</option>
+					  <option value="right">Right</option>
+					  
+				</select>
+				<a href="#">Reset</a>
+			</div><!-- HORIZONTAL ALIGN-->
+			
+			<div class="setting line"><!-- VERTICAL ALIGN-->
+				<p>Vertical align</p>
+				<select id="v-align-image">
+					  <option value="top">Top</option>
+					  <option value="middle">Middle</option>
+					  <option value="bottom">Bottom</option>
+					  
+				</select>
+				<a href="#">Reset</a>
+			</div><!-- VERTICAL ALIGN-->
+	
+	</div> <!-- end of monster panel -->
+			
+</body>
+</html>
