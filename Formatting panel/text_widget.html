@@ -37,7 +37,7 @@ time, mark, audio, video, div {
         padding: 0;
         border: 0;
         font-size: 100%;
-        font: 16px sans-serif;
+        font: 11px sans-serif;
         vertical-align: baseline;
 		color: #404040;
 
@@ -50,8 +50,8 @@ html, body {
 .panel {
         display: inline-block;
         float: left;
-        width: 320px;
-        height: 450px;
+        width: 300px;
+        height: 900px;
         overflow: auto;
         margin-left: 20px;
         margin-top:20px;
@@ -70,8 +70,8 @@ html, body {
 
 p {
         display: inline-block;
-        width: 110px;
-        font-size: 12px;
+        width: 80px;
+        font-size: 11px;
         color: #404040;
 }
 
@@ -86,7 +86,7 @@ h2 {
 select {
         display: inline-block;
         position:relative;
-        width: 130px;
+        width: 125px;
 }
 
 input {
@@ -103,9 +103,7 @@ a {
         text-decoration:none;
 }
 
-button {
-        margin-left:18px;
-}
+
 
 a:hover {
         display: inline-block;
@@ -137,7 +135,6 @@ a:hover {
 
 .property {
 		background-color:#f5f5f5;
-
 }
 
 .line {
@@ -149,6 +146,11 @@ a:hover {
 		background-color:#f5f5f5;
 }
 
+.property-input {
+	width: 71px;
+}
+
+
 #reset-image {
         width: 130px;
 }
@@ -158,10 +160,11 @@ a:hover {
 }
 
 
-#widget-name, #tooltip{
+#widget-name, #tooltip {
         display: inline-block;
-        width: 130px;
+        width: 159px;
 }
+ 
         </style>
         
 <body>
@@ -177,13 +180,13 @@ a:hover {
                         </div><!-- WIDGET NAME-->
                         
                         <div class="setting property"><!-- WIDGET SIZE-->
-                                <p>Size (px)</p>
-                            <input id="x-size" type="text" name="x-size" value=""><input id="y-size" type="text" name="y-size" value="">
+                                <p>Size </p>
+                            <input class="property-input" id="x-size" type="text" name="x-size" value=""><input class="property-input" id="y-size" type="text" name="y-size" value="">
                         </div><!-- WIDGET SIZE-->
                         
                         <div class="setting property line"><!-- WIDGET POSITION-->
-                                <p>Position (px)</p>
-                                <input id="x-coord" type="text" name="x-coord" value=""><input id="y-coord" type="text" name="y-coord" value="">
+                                <p>Position </p>
+                                <input class="property-input" id="x-coord" type="text" name="x-coord" value=""><input class="property-input" id="y-coord" type="text" name="y-coord" value="">
                         </div><!-- WIDGET POSITION-->
               			  <div class="setting heading"><!-- TITLE-->
                                 <h2>Text</h2>
@@ -201,13 +204,13 @@ a:hover {
                         </div><!-- FONT -->
                         
                         <div class="setting"><!-- FONT SIZE-->
-                                <p>Font size (px)</p>
+                                <p>Font size </p>
                                 <input id="font-size" type="text" name="font-size" value="">
                                 <a href="#">Reset</a>
                         </div><!-- FONT SIZE-->
 
                         <div class="setting"><!-- FONT COLOR-->
-                                <p>Font color (#)</p>
+                                <p>Font color #</p>
                                 <input id="font-color" type="text" name="font-color" value="">
                                 <a href="#">Reset</a>
                         </div><!-- FONT COLORE-->
@@ -251,13 +254,13 @@ a:hover {
                         </div><!-- HORIZONTAL ALIGN-->
                         
                         <div class="setting"><!-- PADDING-->
-                                <p>Padding (px)</p>
+                                <p>Padding </p>
                                 <input id="padding" type="text" name="padding" value="">
                                 <a href="#">Reset</a>
                         </div><!-- PADDING-->
                         
                         <div class="setting"><!-- LINE SPACING-->
-                                <p>Line spacing (px)</p>
+                                <p>Line spacing </p>
                                 <input id="line-spacing" type="text" name="line-spacing" value="">
                                 <a href="#">Reset</a>
                         </div><!-- LINE SPACING-->
@@ -278,13 +281,13 @@ a:hover {
                         </div><!-- TITLE-->
                         
                         <div class="setting"><!-- BACKGROUND COLOR-->
-                                <p>Background color(#)</p>
+                                <p>Color#</p>
                                 <input id="bgd-color" type="text" name="bgd-color" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BACKGROUND COLOR-->
 
                         <div class="setting"><!-- BACKGROUND IMAGE-->
-                                <p>Background image</p>
+                                <p>Image</p>
                                 <input id="image-name" type="text" name="image-name" value="">
                                 <button id="upload-image">Upload</button>
                                 <a href="#">Reset</a>
@@ -333,13 +336,13 @@ a:hover {
                         </div><!-- TITLE-->
                         
                         <div class="setting"><!-- BORDER COLOR-->
-                                <p>Line color (#)</p>
+                                <p>Line color #</p>
                                 <input id="border-all-color" type="text" name="border-all-color" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER COLOR-->
                         
                         <div class="setting"><!-- BORDER WIDTH-->
-                                <p>Border width (px)</p>
+                                <p>Border width </p>
                                 <input id="border-width-all" type="text" name="border-width-all" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER WIDTH-->
@@ -361,13 +364,13 @@ a:hover {
                         </div><!-- TITLE-->
                         
                         <div class="setting"><!-- BORDER COLOR-->
-                                <p>Line color (#)</p>
+                                <p>Line color #</p>
                                 <input id="border-all-color" type="text" name="border-all-color" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER COLOR-->
                         
                         <div class="setting"><!-- BORDER WIDTH-->
-                                <p>Border width (px)</p>
+                                <p>Border width </p>
                                 <input id="border-width-all" type="text" name="border-width-all" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER WIDTH-->
@@ -389,13 +392,13 @@ a:hover {
                         </div><!-- TITLE-->
                         
                         <div class="setting"><!-- BORDER COLOR-->
-                                <p>Line color (#)</p>
+                                <p>Line color #</p>
                                 <input id="border-all-color" type="text" name="border-all-color" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER COLOR-->
                         
                         <div class="setting"><!-- BORDER WIDTH-->
-                                <p>Border width (px)</p>
+                                <p>Border width </p>
                                 <input id="border-width-all" type="text" name="border-width-all" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER WIDTH-->
@@ -417,13 +420,13 @@ a:hover {
                         </div><!-- TITLE-->
                         
                         <div class="setting"><!-- BORDER COLOR-->
-                                <p>Line color (#)</p>
+                                <p>Line color #</p>
                                 <input id="border-all-color" type="text" name="border-all-color" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER COLOR-->
                         
                         <div class="setting"><!-- BORDER WIDTH-->
-                                <p>Border width (px)</p>
+                                <p>Border width </p>
                                 <input id="border-width-all" type="text" name="border-width-all" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER WIDTH-->
@@ -440,19 +443,19 @@ a:hover {
                                 <a href="#">Reset</a>
                         </div><!-- BORDER STYLE-->
                         
-                        <div class="setting"><!-- TITLE-->
-                                <p class="bold">Border - Bottom:</p>
+                        <div class="subhead"><!-- TITLE-->
+                                <p class="bold">Bottom:</p>
                         </div><!-- TITLE-->
                         
                         <div class="setting"><!-- BORDER COLOR-->
-                                <p>Line color (#)</p>
+                                <p>Line color #</p>
                                 <input id="border-all-color" type="text" name="border-all-color" value="">
                                 <a href="#">Reset</a>
                         </div><!-- BORDER COLOR-->
                         
                         <div class="setting"><!-- BORDER WIDTH-->
-                                <p>Border width (px)</p>
-                                <input id="border-width-all" type="text" name="border-width-all" value="">
+                                <p>Border width </p>
+                                <input id="border-width-all" type="text" name="border-width-all" value=""> px
                                 <a href="#">Reset</a>
                         </div><!-- BORDER WIDTH-->
 
@@ -472,35 +475,35 @@ a:hover {
                                 <h2>Rounded corners</h2>
                         </div><!-- TITLE-->
                         
-                        <div class="setting"><!-- All CORNERS-->
-                                <p>All corners</p>
+                        <div class="setting"><!-- All S-->
+                                <p>All</p>
                                 <input id="radius-all" type="text" name="radius-all" value="">
                                 <a href="#">Reset</a>
-                        </div><!-- ALL CORNERS-->
+                        </div><!-- ALL S-->
                         
-                        <div class="setting"><!-- TOP LEFT CORNER-->
-                                <p>Top left corner</p>
+                        <div class="setting"><!-- TOP LEFT -->
+                                <p>Top left </p>
                                 <input id="radius-top-left" type="text" name="radius-top-left" value="">
                                 <a href="#">Reset</a>
-                        </div><!-- TOP LEFT CORNER-->
+                        </div><!-- TOP LEFT -->
                         
-                        <div class="setting"><!-- TOP RIGHT CORNER-->
-                                <p>Top right corner</p>
+                        <div class="setting"><!-- TOP RIGHT -->
+                                <p>Top right </p>
                                 <input id="radius-top-right" type="text" name="radius-top-right" value="">
                                 <a href="#">Reset</a>
-                        </div><!-- TOP RIGHT CORNER-->
+                        </div><!-- TOP RIGHT -->
                         
-                        <div class="setting"><!-- BOTTOM RIGHT CORNER-->
-                                <p>Bottom right corner</p>
+                        <div class="setting"><!-- BOTTOM RIGHT -->
+                                <p>Bottom right </p>
                                 <input id="radius-bottom-right" type="text" name="radius-bottom-right" value="">
                                 <a href="#">Reset</a>
-                        </div><!-- BOTTOM RIGHT CORNER-->
+                        </div><!-- BOTTOM RIGHT -->
                         
-                        <div class="setting line"><!-- BOTTOM LEFT CORNER-->
-                                <p>Bottom left corner</p>
+                        <div class="setting line"><!-- BOTTOM LEFT -->
+                                <p>Bottom left </p>
                                 <input id="radius-bottom-left" type="text" name="radius-bottom-left" value="">
                                 <a href="#">Reset</a>
-                        </div><!-- BOTTOM LEFT CORNER-->
+                        </div><!-- BOTTOM LEFT -->
                         
                         <div class="setting heading widget"><!-- TITLE-->
                                 <h2>Properties</h2>
