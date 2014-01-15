@@ -12,7 +12,7 @@
 
 	</head>
 	
-	<style>
+        <style>
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -33,123 +33,131 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, div {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: 16px sans-serif;
-	vertical-align: baseline;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: 11px sans-serif;
+        vertical-align: baseline;
+		color: #404040;
+
 }
 
 html, body {
-	height: 100%;
+        height: 100%;
 }
 
 .panel {
-	display: inline-block;
-	float: left;
-	width: 320px;
-	height: auto;
-	overflow: scroll;
-	margin-left: 20px;
-	margin-top:20px;
-	background-color: #f0f0f0;
-	border: 1px solid #c0c0c0;
+        display: inline-block;
+        float: left;
+        width: 300px;
+        height: 900px;
+        overflow: auto;
+        margin-left: 20px;
+        margin-top:20px;
+        background-color: #f0f0f0;
+        border: 1px solid #cccccc;
 }
 
-label, .setting {
-	display: block;
-	height: 25px;
-	padding: 5px;
-	padding-top: 8px;
+.setting {
+        display: block;
+        height: 25px;
+        padding: 5px;
+        padding-top: 8px;
+		padding-left:18px;
+		padding-right:18px;
 }
 
 p {
-	display: inline-block;
-	width: 110px;
-	font-size: 12px;
-	color: #404040;
+        display: inline-block;
+        width: 80px;
+        font-size: 11px;
+        color: #404040;
 }
 
 h2 {
-	display: inline-block;
-	color: #404040;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
 }
 
 select {
-	display: inline-block;
-	position:relative;
-	width: 135px;
+        display: inline-block;
+        position:relative;
+        width: 125px;
 }
 
 input {
-	display: inline-block;
-	position: inherit;
-	width: 50px;
-	left: 50px;
+        display: inline-block;
+        position: inherit;
+        width: 57px;
+        left: 50px;
 }
 
 a {
-	float: right;
-	font-size: 10px;
-	color: #404040;
-	margin-top: 6px;
-	text-decoration:none;
+        float: right;
+        font-size: 10px;
+        margin-top: 6px;
+        text-decoration:none;
 }
+
+
 
 a:hover {
-	display: inline-block;
-	float: right;
-	font-size: 10px;
-	color: #006fbe;
-	text-decoration: underline;
-}
-
-button {
-	margin-left:18px;
-}
-
-.form-checkbox {
-	display: inline;
-	float: right;
-
-	margin-top: -15px;
-	padding: 0px;
+        display: inline-block;
+        float: right;
+        font-size: 10px;
+        color: #006fbe;
+        text-decoration: underline;
 }
 
 .bold {
-	font-weight: bold;
-	width: 100%;
+        font-weight: bold;
+        width: 100%;
 }
 
-label, .heading {
-	height:18px;
-	background: #e0e0e0;
+.heading {
+        height:18px;
+		padding-top:15px;
 }
+
+.subhead {
+        display: block;
+        height: 15px;
+        padding-top: 18px;
+		padding-left:18px;
+		padding-right:18px;
+		font-weight:bold;
+}
+
 
 .property {
-	background: #e0e0e0;
+		background-color:#f5f5f5;
 }
 
 .line {
-	border-bottom: 1px solid #c0c0c0;
+        border-bottom: 1px solid #d8d8d8;
+		padding-bottom:12px;
+}
+
+.widget {
+		background-color:#f5f5f5;
 }
 
 #reset-image {
-	width: 135px;
+        width: 130px;
 }
 
 #y-size, #y-coord {
-	margin-left: 22px;
+        margin-left: 10px;
 }
 
-#widget-name, #tooltip{
-	display: inline-block;
-	width: 128px;
+
+#widget-name, #tooltip {
+        display: inline-block;
+        width: 159px;
 }
 
 			label {display:block;}
@@ -161,7 +169,7 @@ label, .heading {
 <body>
 		<div class="panel"><!-- TEXT PANEL -->
 			
-			<div class="setting heading"><!-- TITLE-->
+			<div class="setting heading widget"><!-- TITLE-->
 				<h2>Text widget</h2>
 			</div><!-- TITLE-->
 			
